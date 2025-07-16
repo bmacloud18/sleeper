@@ -22,7 +22,7 @@ DB_URL = os.environ.get('DB_URL')
 pool: ConnectionPool = None
 
 
-from util import get_token, verify_token
+from src.util import get_token, verify_token
 # TOKEN_NAME = os.environ.get('TOKEN_NAME')
 # API_SECRET = os.environ.get('API_SECRET')
 # ALGORITHM = "HS256"
