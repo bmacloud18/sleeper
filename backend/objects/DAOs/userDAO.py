@@ -1,15 +1,11 @@
 from db import get_db
 from models.user import User
 
-
 from Crypto.Protocol.KDF import PBKDF2
 from Crypto.Hash import SHA512
 from Crypto.Random import get_random_bytes
 
 import math, random
-
-
-
 
 def get_all():
     with get_db() as conn:
@@ -36,7 +32,7 @@ def signup(id, username, password):
     valid_chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
     n = math.floor( random.random() * 15 ) + 10
     while n > 0:
-        randomString += valid_chars.charAt( math.floor( random.random() * len(valid_chars) ) )
+        random_string += valid_chars.charAt( math.floor( random.random() * len(valid_chars) ) )
         n=n-1
     avatar = 'https://robohash.org/${randomString}.png?size=64x64&set=set1&bgset=any'
 

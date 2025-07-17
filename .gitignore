@@ -207,4 +207,4 @@ marimo/_lsp/
 __marimo__/
 
 # any created txt files
-backend/scraping/*.txt
+backend/objects/scraping/*.txt
