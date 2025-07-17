@@ -14,6 +14,3 @@ def get_db():
 
     with pool.connection() as con:
         yield con
-
-def shutdown():
-    pool.close()

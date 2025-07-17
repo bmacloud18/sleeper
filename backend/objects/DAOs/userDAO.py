@@ -1,5 +1,6 @@
-from db import get_db, shutdown
-from psycopg import Connection
+from db import get_db
+from models.user import User
+
 
 from Crypto.Protocol.KDF import PBKDF2
 from Crypto.Hash import SHA512
@@ -7,7 +8,7 @@ from Crypto.Random import get_random_bytes
 
 import math, random
 
-from models.user import User
+
 
 
 def get_all():
