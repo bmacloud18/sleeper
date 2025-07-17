@@ -10,6 +10,9 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 import numpy as np
 
+from DAOs import draftDAO, pickDAO, playerDAO, userDAO
+
+
 draft_id_list = np.load('draft_id_list.npy')
 n = len(draft_id_list)
 
